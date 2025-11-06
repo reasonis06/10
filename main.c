@@ -3,16 +3,20 @@
 
 int main(void)
 {
-	char code1 = 'A'; // char type variable
-	int code2 = 65; //int type variable
-  
-  
-  printf("code1 = %c, (%d)\n", code1, code1);
-  printf("code2 = %c, (%d)\n", code2, code2);
+	int i = 0;
+	char str[4];
+	str[0] = 'a';
+	str[1] = 'b';
+	str[2] = 'c';
+	str[3] = '\0';
+	
+	printf("%s\n", str);
+	
+	while(str[i] != '\0') {
+		printf("%c", str[i]);
+		i++;
+	}
   
   system("PAUSE");	
   return 0;
 }
-
-// code1 = A, (65)
-// code2 = A, (65)
