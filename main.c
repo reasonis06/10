@@ -3,11 +3,24 @@
 
 int main(void)
 {
-	int i = 0;
-	char src[30] = "happy C programming";
+	char input[100];
+	FILE* fp;
+	int i;
 	
-	printf("length of \"%s\" is %i\n", src, strlen(src));
+	//fopen
+	fp = fopen("sample.txt", "w");
+	
+	//input ouput
+	for(i=0; i<3; i++) {
+		printf("input a word: ");
+		scanf("%s", input);
+		fprintf(fp, "%s\n", input);
+	}
+	
+	//fclose
+	fclose(fp);	
 	
 	system("PAUSE");
+	return 0;
 }
 
