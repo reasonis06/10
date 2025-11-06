@@ -4,14 +4,10 @@
 int main(void)
 {
 	int i = 0;
-	char src[] = "The worst things to eat before you sleep";
-	char dst[100];
+	char src[30] = "happy C programming";
 	
-	strcpy(dst, src);
-	
-	printf("copied string: %s\n", dst);
+	printf("length of \"%s\" is %i\n", src, strlen(src));
 	
 	system("PAUSE");
 }
 
-//return value X
